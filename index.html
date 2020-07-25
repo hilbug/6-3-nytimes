@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>NY Times Group Activity</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
-            </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">New York Times Search</h1>
         </div>
-    </div>
+      </div>
+      <form>
+          <h2>Search Parameters</h2>
+        <div class="form-group">
+          <label for="searchInput">Search Term:</label>
+          <input type="text" class="form-control" id="searchInput">
+        </div>
+        <div class="form-group">
+          <label for="numRecordsInput">Number of Records to retrieve:</label>
+          <input type="number" class="form-control" id="numRecordsInput">
+        </div>
+        <div class="form-group">
+            <label for="startYearInput">Start Year (Optional):</label>
+            <input type="number" class="form-control" id="startYearInput">
+          </div>
+        <div class="form-group">
+            <label for="endYearInput">End Year (Optional):</label>
+            <input type="number" class="form-control" id="endYearInput">
+          </div>
+          <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+          <button type="submit" class="btn btn-primary" id="clearBtn">Clear</button>
+      </form>
+      <form>
+        <div class="form-group row">
+            <h2>Top Articles</h2>
+          </div>
+      </form>
     
-    <script src=""></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
