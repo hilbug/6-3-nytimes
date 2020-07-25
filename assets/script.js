@@ -6,8 +6,14 @@ $(document).ready(function(){
     const endYear = $.trim($("#endYearInput").val());
     const searchBtn = $("#searchBtn");
     const clearBtn = $("#clearBtn");
-
+    
     // construct query URL
+    const queryUrl = "http://api.nytimes.com/svc/search/v2/articlesearch.json?";
+    const apiKey = "WFDrEXAvwlYsmHSYDpM9CazUe3KFYeR9";
+
+    function buildQuery() {
+        
+    }
 
     // code for AJAX
     
